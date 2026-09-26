@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Muslim Deeni Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0F8A5F;
+            --primary-dark: #095C3E;
+            --primary-light: #E8F5E9;
+            --gold: #D4AF37;
+            --gold-light: #FFF9E6;
+            --slate-900: #0F172A;
+            --slate-800: #1E293B;
+            --slate-700: #334155;
+            --slate-600: #475569;
+            --slate-500: #64748B;
+            --slate-200: #E2E8F0;
+            --slate-100: #F1F5F9;
+            --slate-50: #F8FAFC;
+            --white: #FFFFFF;
+            --radius-lg: 16px;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--slate-800);
+            background-color: var(--slate-50);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Top Header */
+        .site-header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            color: var(--white);
+            padding: 50px 20px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 4px solid var(--gold);
+        }
+
+        .site-header::before {
+            content: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ";
+            display: block;
+            font-family: 'Amiri', serif;
+            font-size: 26px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .site-header h1 {
+            font-size: 36px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .site-header p {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        .meta-tags {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .meta-tags span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: -30px auto 60px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Summary Banner */
+        .summary-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--slate-200);
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .summary-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .summary-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-md);
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .summary-text h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin-bottom: 4px;
+        }
+
+        .summary-text p {
+            font-size: 13px;
+            color: var(--slate-600);
+            line-height: 1.5;
+        }
+
+        /* Main Content Box */
+        .content-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--slate-200);
+        }
+
+        /* Typography & Section Styles */
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin: 36px 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid var(--slate-100);
+            padding-bottom: 10px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .section-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--slate-800);
+            margin: 20px 0 10px;
+        }
+
+        p {
+            font-size: 15px;
+            color: var(--slate-700);
+            margin-bottom: 16px;
+        }
+
+        ul, ol {
+            margin: 0 0 20px 24px;
+            color: var(--slate-700);
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--slate-900);
+        }
+
+        /* Highlight Boxes */
+        .highlight-box {
+            background: var(--slate-50);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 20px 0;
+            font-size: 14.5px;
+        }
+
+        .highlight-box.gold {
+            background: var(--gold-light);
+            border-left-color: var(--gold);
+        }
+
+        /* Permissions Table */
+        .permissions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .permissions-table th {
+            background: var(--slate-800);
+            color: var(--white);
+            text-align: left;
+            padding: 14px 16px;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .permissions-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--slate-200);
+            color: var(--slate-700);
+            vertical-align: top;
+        }
+
+        .permissions-table tr:nth-child(even) {
+            background: var(--slate-50);
+        }
+
+        .permissions-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .badge-perm {
+            display: inline-block;
+            background: var(--slate-100);
+            color: var(--slate-800);
+            font-family: monospace;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid var(--slate-200);
+        }
+
+        /* Contact Section */
+        .contact-card {
+            background: linear-gradient(135deg, var(--slate-900) 0%, var(--slate-800) 100%);
+            color: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-card h3 {
+            color: var(--white);
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .contact-card p {
+            color: var(--slate-200);
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 15px;
+            width: fit-content;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.2s ease;
+        }
+
+        .contact-email:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        /* Footer */
+        .site-footer {
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 13px;
+            color: var(--slate-500);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .site-header {
+                padding: 40px 16px 30px;
+            }
+            .site-header h1 {
+                font-size: 28px;
+            }
+            .content-card {
+                padding: 24px 18px;
+            }
+            .summary-card {
+                padding: 20px 16px;
+                grid-template-columns: 1fr;
+            }
+            .permissions-table th, .permissions-table td {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-content">
+            <div class="app-badge">
+                <span>🕌 Official Privacy Policy</span>
+            </div>
+            <h1>Muslim Deeni Calendar</h1>
+            <p>Comprehensive Islamic Utility: Prayer Times, Hijri Calendar, Holy Quran, Qibla Direction & Supplications</p>
+            <div class="meta-tags">
+                <span><strong>Developer:</strong> Vaseem & Team</span>
+                <span>•</span>
+                <span><strong>Effective Date:</strong> September 25, 2026</span>
+                <span>•</span>
+                <span><strong>Compliance:</strong> Google Play Store & GDPR/COPPA</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Executive Summary Cards -->
+        <section class="summary-card">
+            <div class="summary-item">
+                <div class="summary-icon">🛡️</div>
+                <div class="summary-text">
+                    <h3>100% Privacy-First</h3>
+                    <p>No selling, renting, or monetization of your personal data. Zero third-party ad networks.</p>
+                </div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-icon">📍</div>
+                <div class="summary-text">
+                    <h3>On-Device Location</h3>
+                    <p>Location coordinates stay strictly on your device for accurate prayer calculations & Qibla.</p>
+                </div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-icon">📱</div>
+                <div class="summary-text">
+                    <h3>Offline Functionality</h3>
+                    <p>All notes, bookmarks, calendar events, and Tasbeeh counts are stored locally in Room DB.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Card -->
+        <article class="content-card">
+
+            <!-- 1. Introduction -->
+            <section id="introduction">
+                <h2><span class="section-num">1</span> Introduction & Scope</h2>
+                <p>Welcome to <strong>Muslim Deeni Calendar</strong> ("we," "our," or "us"). We are committed to protecting your privacy and ensuring that your personal data is handled responsibly, transparently, and securely.</p>
+                <p>This Privacy Policy applies to the <strong>Muslim Deeni Calendar</strong> mobile application distributed via the Google Play Store. It outlines the specific types of information we access or collect, how that information is used, how it is safeguarded on your Android device, and your rights as a user.</p>
+                
+                <div class="highlight-box">
+                    <strong>Core Commitment:</strong> Muslim Deeni Calendar is built as a <em>Sadqah-e-Jariyah</em> (noble ongoing Islamic benefit). It does <strong>not</strong> track your browsing habits, does <strong>not</strong> build user profiles, does <strong>not</strong> serve behavioral advertisements, and does <strong>not</strong> transmit your private worship data to external servers.
+                </div>
+            </section>
+
+            <!-- 2. Information We Access and Collect -->
+            <section id="information-collected">
+                <h2><span class="section-num">2</span> Information We Access and Collect</h2>
+                <p>To provide core Islamic features (such as calculating the exact astronomical prayer times, pointing towards the Kaaba, and sounding Azaan alarms), our application requires access to specific device capabilities:</p>
+
+                <h3>A. Geographic Location Data (Precise & Approximate)</h3>
+                <ul>
+                    <li><strong>What is accessed:</strong> Your device's latitude, longitude, and approximate city name via GPS or network location providers.</li>
+                    <li><strong>Why it is needed:</strong>
+                        <ol>
+                            <li><strong>Accurate Prayer Times:</strong> Calculating astronomical solar positions (Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha) according to your chosen Islamic calculation method (e.g., University of Islamic Sciences Karachi, Umm Al-Qura, ISNA, MWL) and school of jurisprudence (Hanafi/Shafi'i).</li>
+                            <li><strong>Qibla Compass:</strong> Computing the true geodesic heading from your current coordinate to the Holy Kaaba in Makkah (21.4225° N, 39.8262° E).</li>
+                            <li><strong>Nearby Mosques:</strong> Allowing you to locate masjids in your vicinity via external map intent.</li>
+                        </ol>
+                    </li>
+                    <li><strong>How it is handled:</strong> Your location is processed <strong>strictly on your device</strong>. It is saved in the local Android SQLite database (`AppDatabase`) on your phone and is <strong>never uploaded or sold to any cloud servers or third parties</strong>.</li>
+                    <li><strong>Manual Fallback:</strong> If you do not wish to grant GPS permissions, the app provides a complete offline city selection tool allowing you to select your city manually without giving any location permission.</li>
+                </ul>
+
+                <h3>B. Personal Notes, Bookmarks & Worship Progress</h3>
+                <ul>
+                    <li><strong>What is collected:</strong> Personal notes attached to Hijri calendar dates, Ayah bookmarks in the Holy Quran, Qaza Namaz counts, and daily Tasbeeh counts.</li>
+                    <li><strong>Where it is stored:</strong> Stored 100% locally in your phone's internal storage sandbox using Android Room Database. No account creation is mandatory, and your private worship records remain solely on your device.</li>
+                </ul>
+
+                <h3>C. Audio Streaming and Media Cache</h3>
+                <ul>
+                    <li><strong>What is accessed:</strong> Holy Quran audio recitations and Azaan audio files.</li>
+                    <li><strong>How it is handled:</strong> Audio files are fetched directly over secure HTTPS from public, community-recognized Islamic CDNs (such as EveryAyah and Quran.com API). No user personal identifiers are sent along with these network requests.</li>
+                </ul>
+            </section>
+
+            <!-- 3. Permissions Breakdown Table -->
+            <section id="permissions">
+                <h2><span class="section-num">3</span> Android Permissions & Their Purposes</h2>
+                <p>In accordance with Google Play Developer Policies, below is the transparent declaration of all Android permissions utilized by the application:</p>
+
+                <table class="permissions-table">
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Category</th>
+                            <th>Purpose & Necessity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge-perm">ACCESS_FINE_LOCATION</span><br><span class="badge-perm">ACCESS_COARSE_LOCATION</span></td>
+                            <td>Location</td>
+                            <td>Required to calculate precise prayer times for your local horizon and calculate the accurate angle for the Qibla compass. Coordinates stay on device.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-perm">POST_NOTIFICATIONS</span></td>
+                            <td>Notifications (API 33+)</td>
+                            <td>Required to send timely Azaan reminders at prayer times, Sehri/Iftar reminders, and daily morning spiritual notices.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-perm">SCHEDULE_EXACT_ALARM</span><br><span class="badge-perm">USE_EXACT_ALARM</span></td>
+                            <td>Alarms & Clocks</td>
+                            <td>Required to schedule exact second-accurate Azaan alerts even when your device is in low-power Doze mode.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-perm">RECEIVE_BOOT_COMPLETED</span></td>
+                            <td>System</td>
+                            <td>Required to automatically restore your configured prayer notification alarms whenever your smartphone restarts.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-perm">INTERNET</span><br><span class="badge-perm">ACCESS_NETWORK_STATE</span></td>
+                            <td>Network</td>
+                            <td>Used to stream Quranic recitation audio, perform reverse-geocoding when searching a city by name, and check network availability.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-perm">VIBRATE</span></td>
+                            <td>Haptics</td>
+                            <td>Provides gentle tactile feedback when using the Digital Tasbeeh counter and Azaan alarm vibrations.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 4. Third-Party Services -->
+            <section id="third-party">
+                <h2><span class="section-num">4</span> Third-Party Services & Integrations</h2>
+                <p>We do not integrate with third-party tracking services or data brokers. The app interacts with trusted service providers only as follows:</p>
+                <ul>
+                    <li><strong>Google Play Services (Fused Location Provider):</strong> Used exclusively on-device to retrieve system GPS coordinates when the user requests auto-detection. Governed by Google's Privacy Policy.</li>
+                    <li><strong>Public Islamic Content CDNs:</strong> High-quality Quran recitations and tafseer texts are retrieved directly from verified open Islamic repositories via encrypted HTTPS protocols.</li>
+                    <li><strong>External Map Applications:</strong> When you click "Find Nearby Mosques", the app launches your installed mapping application (such as Google Maps) via standard Android intents with a search query. No personal information is transmitted by our app.</li>
+                </ul>
+            </section>
+
+            <!-- 5. Children's Privacy -->
+            <section id="children">
+                <h2><span class="section-num">5</span> Children's Privacy (COPPA & GDPR-K Compliance)</h2>
+                <p>Muslim Deeni Calendar is designed for the entire family, including young learners seeking to memorize Islamic kalimas, Quranic surahs, and daily supplications.</p>
+                <div class="highlight-box gold">
+                    <strong>Protection of Minors:</strong> We do not knowingly collect, store, or solicit personally identifiable information from children under the age of 13 (or under the age of 16 in the European Union). Since the application does not require user registration and processes all essential calculations on-device, parents and educators can be completely assured that children's privacy is fully preserved.
+                </div>
+            </section>
+
+            <!-- 6. Data Retention and Deletion -->
+            <section id="data-retention">
+                <h2><span class="section-num">6</span> Data Retention, Control & Deletion</h2>
+                <p>Because your data is stored locally in your device's isolated app storage:</p>
+                <ul>
+                    <li><strong>You have total ownership:</strong> You can edit, modify, or erase your notes, bookmarks, and settings at any time directly through the app UI.</li>
+                    <li><strong>Complete deletion:</strong> Clearing the application's data via your Android device's <em>Settings &gt; Apps &gt; Muslim Deeni Calendar &gt; Storage &gt; Clear Storage</em> or uninstalling the app permanently and irreversibly deletes all stored preferences, notes, and local database entries from your device.</li>
+                </ul>
+            </section>
+
+            <!-- 7. Security of Your Information -->
+            <section id="security">
+                <h2><span class="section-num">7</span> Security of Your Information</h2>
+                <p>We implement rigorous technical safeguards to protect your data:</p>
+                <ul>
+                    <li><strong>Android App Sandboxing:</strong> All local database entries (notes, city coordinates, preferences) are stored in your private internal application directory which cannot be read by other installed applications.</li>
+                    <li><strong>Encrypted Connections:</strong> Any web request (e.g. streaming audio or downloading recitation files) is strictly enforced over TLS/HTTPS encryption.</li>
+                </ul>
+            </section>
+
+            <!-- 8. Updates to this Policy -->
+            <section id="policy-changes">
+                <h2><span class="section-num">8</span> Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable regulatory standards (such as Google Play Developer Policy updates). Any changes will be published directly on this page with an updated "Effective Date." We encourage users to periodically review this policy to stay informed.</p>
+            </section>
+
+            <!-- 9. Contact Us -->
+            <section id="contact-us">
+                <div class="contact-card">
+                    <h3>Contact Information & Privacy Officer</h3>
+                    <p>If you have any questions, feedback, concerns, or requests regarding this Privacy Policy or your data privacy while using Muslim Deeni Calendar, please contact us directly:</p>
+                    <a href="mailto:sarwaridigital@gmail.com" class="contact-email">
+                        ✉️ sarwaridigital@gmail.com
+                    </a>
+                    <p style="font-size: 13px; color: var(--slate-400);">Developer: sarwari digital & Team • Muslim Deeni Calendar App</p>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© 2026 Muslim Deeni Calendar. All rights reserved.</p>
+        <p style="margin-top: 6px;">Sadqah-e-Jariyah for the Ummah • Free, Private & Secure</p>
+    </footer>
+
+</body>
+</html>
